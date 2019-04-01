@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    /* font-family: 'Varela Round', sans-serif; */
+    font-size: 100%;
+    vertical-align: bottom;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+.container{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.aside{
+    background-color: #f2f3f7;
+    flex: 25%;
+    height: 900px;
+    overflow-y: scroll;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.body{
+    flex: 75%;
+
+}
+
+.name{
+    font-size: 35px;
+    padding: 10px;
+}
+
+.title{
+    font-size: 16px;
+    color: dodgerblue;
+}
+
+.location{
+    font-size: 16px;
+    padding: 10px;
+
+}
+
+.links ul{
+    list-style: none;
+}
+
+.links li{
+    padding: 10px;
+}
+
+.links li a:hover{
+    border-bottom: 2px solid dodgerblue;
+}
+
+.link{
+    color:dodgerblue;
+}
+
+.aside p {
+    color: dodgerblue;
+    padding: 20px;
+
+}
+
+.social-links{
+    list-style: none;
+}
+
+.social-links li{
+    display: inline-block;
+    padding: 20px;
+    color: dodgerblue;
+}
+
+section{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+.about{
+    position:absolute;
+    opacity: 0;
+}
+
+.works{
+    position:absolute;
+    opacity: 0;
+}
+
+.pre-title{
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #999999;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.pre-heading{
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.8;
+}
+
+.pre-desc {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.skills ul{
+    list-style: none;
+}
+
+.skills li{
+    display: inline-block;
+    color: dodgerblue;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-item{
+    width: 215px;
+    height: 200px;
+    text-align: center;
+    margin: 15px;
+}
+.project-item img{
+    width: 215px;
+    height: 200px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 786px) {
+
+    body{
+        color: red;
+    }
+    .aside{
+        display: none;
+
+    }
+
+    .hamburger{
+        display: inline-block;
+        cursor: pointer;
+        padding: 30px;
+    }
+    
+    .hamburger span{
+        background-color: black;
+        display: block;
+        height: 0.125em;
+        margin-bottom: .250em;
+        position: relative;
+        top: 28px;
+        width: 1.25em;
+        font-size: 30px;
+        transition: 0.4s;
+    
+    }
+    
+    .change span:nth-child(1) {
+        transform: rotate(-45deg) translate(-10px, 5px);
+      }
+      
+      .change span:nth-child(2) {
+          opacity: 0;
+        }
+      
+      .change span:nth-child(3) {
+        transform: rotate(45deg) translate(-10px, -5px);
+      }
+
+}
