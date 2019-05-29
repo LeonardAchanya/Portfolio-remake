@@ -20,7 +20,7 @@
 .aside{
     background-color: #f2f3f7;
     flex: 25%;
-    height: 900px;
+    height: 100%;
     overflow-y: scroll;
     padding-top: 100px;
     padding-bottom: 40px;
@@ -150,40 +150,66 @@ section{
     body{
         color: red;
     }
+
     .aside{
         display: none;
-
+    }
+    .aside-show{
+        transition: all 0.5s;
+        display: block;
     }
 
-    .hamburger{
+    .hamburger {
         display: inline-block;
         cursor: pointer;
-        padding: 30px;
+        height: 10%;
+        margin: 10px;
     }
     
-    .hamburger span{
-        background-color: black;
-        display: block;
-        height: 0.125em;
-        margin-bottom: .250em;
-        position: relative;
-        top: 28px;
-        width: 1.25em;
-        font-size: 30px;
+    .hamburger div {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
         transition: 0.4s;
-    
     }
     
-    .change span:nth-child(1) {
-        transform: rotate(-45deg) translate(-10px, 5px);
-      }
-      
-      .change span:nth-child(2) {
-          opacity: 0;
-        }
-      
-      .change span:nth-child(3) {
-        transform: rotate(45deg) translate(-10px, -5px);
-      }
+    .change{
+        position: absolute;
+        left: 200px;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .change div:nth-child(1) {
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change div:nth-child(2){
+        opacity: 0;
+    }
+
+    .change div:nth-child(3){
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+    
+    .projects{
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-evenly; */
+    }
+    
+    .project-item{
+        width: 145px;
+        height: 100px;
+        text-align: center;
+        margin: 15px;
+    }
+    .project-item img{
+        width: 145px;
+        height: 100px;
+        object-fit: cover;
+    }
 
 }

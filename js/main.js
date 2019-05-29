@@ -52,16 +52,8 @@ document.addEventListener('DOMContentLoaded', function () {
     let hamburgerDetails = document.querySelector('.aside');
     
     hamburger.addEventListener('click', function(){
-    
-    
         hamburger.classList.toggle("change");
-        console.log(hamburgerDetails);
-        if (hamburgerDetails.style.display === "block") {
-            hamburgerDetails.style.display = "none";
-          } else {
-            hamburgerDetails.style.display = "block";
-
-          }
+        hamburgerDetails.classList.toggle("aside-show");
     
     })
 
