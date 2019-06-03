@@ -20,7 +20,7 @@
 .aside{
     background-color: #f2f3f7;
     flex: 25%;
-    height: 100%;
+    height: 60rem;
     overflow-y: scroll;
     padding-top: 100px;
     padding-bottom: 40px;
@@ -77,6 +77,10 @@
 .social-links li{
     display: inline-block;
     padding: 20px;
+    color: dodgerblue;
+}
+
+.social-links a{
     color: dodgerblue;
 }
 
@@ -139,6 +143,11 @@ section{
     margin: 5px;
 
 }
+
+.project-item a{
+    color: dodgerblue;
+}
+
 .project-item img{
     width: 215px;
     height: 200px;
