@@ -27,9 +27,9 @@
     text-align: center;
 }
 
-.body{
+.description{
     flex: 75%;
-
+    height: 100%;
 }
 
 .name{
@@ -131,13 +131,13 @@ section{
 .projects{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .project-item{
-    width: 215px;
-    height: 200px;
     text-align: center;
-    margin: 15px;
+    margin: 5px;
+
 }
 .project-item img{
     width: 215px;
@@ -146,11 +146,6 @@ section{
 }
 
 @media screen and (max-width: 786px) {
-
-    body{
-        color: red;
-    }
-
     .aside{
         display: none;
     }
@@ -158,25 +153,22 @@ section{
         transition: all 0.5s;
         display: block;
     }
-
     .hamburger {
         display: inline-block;
         cursor: pointer;
         height: 10%;
         margin: 10px;
     }
-    
     .hamburger div {
         width: 35px;
         height: 5px;
         background-color: #333;
-        margin: 6px 0;
+        margin: 6px;
         transition: 0.4s;
     }
-    
     .change{
         position: absolute;
-        left: 200px;
+        left: 180px;
         top: 0;
         bottom: 0;
         right: 0;
@@ -185,21 +177,16 @@ section{
     .change div:nth-child(1) {
         transform: rotate(-45deg) translate(-9px, 6px);
     }
-
     .change div:nth-child(2){
         opacity: 0;
     }
-
     .change div:nth-child(3){
         transform: rotate(45deg) translate(-8px, -8px);
     }
-    
     .projects{
         display: flex;
         flex-wrap: wrap;
-        /* justify-content: space-evenly; */
     }
-    
     .project-item{
         width: 145px;
         height: 100px;
@@ -210,6 +197,45 @@ section{
         width: 145px;
         height: 100px;
         object-fit: cover;
+    }
+    .pre-desc {
+        font-size: 17px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width:590px){
+    
+    .hamburger{
+        display: none;
+    }
+    .aside{
+        display: block;
+        width: 100px;
+    }
+    .name{
+        display: none;
+    }
+    .title{
+        display: none;
+    }
+    .location{
+        display: none;
+    }
+    .social-links li{
+        display: block;
+    }
+    section{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 30px;
+    }
+    .pre-desc {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 10px;
     }
 
 }
